@@ -8,13 +8,14 @@ class Solution {
         for(int i=0;i<s.length();i++){
             if(s1.contains(s.charAt(i))){
                 countofvovels++;
+                break;
             }else{
                 countofconsonents++;
             }
         }
-        if(countofvovels==s.length()){
-            return true;
-        }
+        // if(countofvovels==s.length()){
+        //     return true;
+        // }
         if(countofvovels==0){
             return false;
         }
